@@ -5,106 +5,113 @@
     <title>Седона</title>
   </head>
   <body>
-  	<header class="page-header">
-  		<nav class="main-nav  main-nav--closed">
-  			<button class="main-nav__close-btn">Закрыть меню навигации</button>
-  			<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a>Главная</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="#">Фото и видео</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="#">Форма отзыва</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="#">HTML Academy</a>
-					</li>
-  			</ul>
-  		</nav>
-  		<button class="main-nav__open-btn">Открыть меню навигации</button>
-  	</header>
-  	<main>
-  		<section class="media">
-  			<h2 class="media__title">Фото и видео</h2>
-  			<div class="media__photo-block">
-  				<p class="media__photo-block-description">Не можете решиться на путешествие из-за курса? Фотографии помогут забыть о политике и экономике</p>
-  				<div class="media__photo-container">
-  					<div class="media__photo-item">
-  						<img src="img/sedona-photo-1.jpg" width="280" height="280" alt="Photo of Sedona views">
-  						<div class="media__photo-titel">Неродные просторы</div>
-  						<span class="media__photo-author">
-  							Автор фото:
-  							<span class="media__photo-author-name">Борис</span>
-  						</span>
-  						<button class="media__like-btn">Мне нравится</button>
-  						<span class="media__like-counter">1350</span>
-  					</div>
-  					<div class="media__photo-item">
-  						<img src="img/sedona-photo-2.jpg" width="280" height="280" alt="Photo of Sedona views">
-  						<div class="media__photo-titel">Местная растительность</div>
-  						<span class="media__photo-author">
-  							Автор фото:
-  							<span class="media__photo-author-name">Сергей</span>
-  						</span>
-  						<button class="media__like-btn">Мне нравится</button>
-  						<span class="media__like-counter">143</span>
-  					</div>
-  					<div class="media__photo-item">
-  						<img src="img/sedona-photo-3.jpg" width="280" height="280" alt="Photo of Sedona views">
-  						<div class="media__photo-titel">Дорога на север</div>
-  						<span class="media__photo-author">
-  							Автор фото:
-  							<span class="media__photo-author-name">Петр</span>
-  						</span>
-  						<button class="media__like-btn">Мне нравится</button>
-  						<span class="media__like-counter">96</span>
-  					</div>
-  					<div class="media__photo-item">
-  						<img src="img/sedona-photo-4.jpg" width="280" height="280" alt="Photo of Sedona views">
-  						<div class="media__photo-titel">Мост Дьявола</div>
-  						<span class="media__photo-author">
-  							Автор фото:
-  							<span class="media__photo-author-name">Антон</span>
-  						</span>
-  						<button class="media__like-btn">Мне нравится</button>
-  						<span class="media__like-counter">254</span>
-  					</div>
-  				</div>
-  			</div>
-  			<div class="media__video-block">
-  				<div class="media__video-block-title">Все еще сомневаетесь</div>
-  				<p class="media__video-block-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
-  				<div class="media__video-container">
-  					<div class="media__video-controls">
-  						<div class="media__progress-bar">
-  							<div class="media__time-bar"></div>
-  							<div class="media__time-toggle"></div>
-  						</div>
-  						<div class="media__player-buttons">
-  							<span class="media__restart-btn">Показать видео снова</span>
-  							<span class="media__subtitles-btn">Показать/скрыть субтитры</span>
-  							<span class="media__full-screan-btn">Развернуть на весь экран</span>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</section>
-  	</main>
-  	<footer class="page-footer">
-  		<span class="page-footer__hashtag">#visitsedona</span>
-  		<p class="page-footer-social">
-  			<span class="social-links">
-  				<a class="sosial-link  social-link--tw" href="#">Twitter</a>
-  				<a class="sosial-link  social-link--fb" href="#">Facebook</a>
-  				<a class="sosial-link  social-link--yt" href="#">Youtube</a>
-  			</span>
-  		</p>
-  		<p class="page-footer__copyright">
-  			Разработано
-  			<a class="page-footer__copyright-link" href="#">HTML Academy</a>
-  		</p>
-  	</footer>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-nav  main-nav--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="main-nav__menu-btn main-nav__menu-btn--close">Открыть/закрыть меню навигации</button>
+      </header>
+      <main>
+        <section class="media">
+          <h2 class="media__title">Фото и видео</h2>
+          <div class="media__photo-block">
+            <p class="media__photo-block-description">Не можете решиться на путешествие из-за курса? Фотографии помогут забыть о политике и экономике</p>
+            <div class="media__photo-container">
+              <div class="media__photo-item">
+                <img src="img/sedona-photo-1.jpg" width="280" height="280" alt="Photo of Sedona views">
+                <div class="media__photo-titel">Неродные просторы</div>
+                <div class="media__photo-author">
+                  Автор фото:
+                  <span class="media__photo-author-name">Борис</span>
+                </div>
+                <a class="media__like-btn" href="#">
+                  Мне нравится
+                  <span class="media__like-counter">1350</span>
+                </a>
+              </div>
+              <div class="media__photo-item">
+                <img src="img/sedona-photo-2.jpg" width="280" height="280" alt="Photo of Sedona views">
+                <div class="media__photo-titel">Местная растительность</div>
+                <div class="media__photo-author">
+                  Автор фото:
+                  <span class="media__photo-author-name">Сергей</span>
+                </div>
+                <a class="media__like-btn" href="#">
+                  Мне нравится
+                  <span class="media__like-counter">143</span>
+                </a>
+              </div>
+              <div class="media__photo-item">
+                <img src="img/sedona-photo-3.jpg" width="280" height="280" alt="Photo of Sedona views">
+                <div class="media__photo-titel">Дорога на север</div>
+                <div class="media__photo-author">
+                  Автор фото:
+                  <span class="media__photo-author-name">Петр</span>
+                </div>
+                <a class="media__like-btn" href="#">
+                  Мне нравится
+                  <span class="media__like-counter">96</span>
+                </a>
+              </div>
+              <div class="media__photo-item">
+                <img src="img/sedona-photo-4.jpg" width="280" height="280" alt="Photo of Sedona views">
+                <div class="media__photo-titel">Мост Дьявола</div>
+                <div class="media__photo-author">
+                  Автор фото:
+                  <span class="media__photo-author-name">Антон</span>
+                </div>
+                <a class="media__like-btn" href="#">
+                  Мне нравится
+                  <span class="media__like-counter">254</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="media__video-block">
+            <div class="media__video-block-title">Все еще сомневаетесь</div>
+            <p class="media__video-block-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
+            <div class="media__video-container">
+              <div class="media__video-controls">
+                <div class="media__progress-bar">
+                  <div class="media__time-bar"></div>
+                  <div class="media__time-toggle"></div>
+                </div>
+                <div class="media__player-buttons">
+                  <button class="media__restart-btn">Показать видео снова</button>
+                  <button class="media__subtitles-btn">Показать/скрыть субтитры</button>
+                  <button class="media__full-screan-btn">Развернуть на весь экран</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+  	  <footer class="page-footer">
+  	    <span class="page-footer__hashtag">#visitsedona</span>
+  	    <div class="social-links">
+  	      <a class="sosial-link  social-link--tw" href="#">Twitter</a>
+  	      <a class="sosial-link  social-link--fb" href="#">Facebook</a>
+  	      <a class="sosial-link  social-link--yt" href="#">Youtube</a>
+  	    </div>
+  	    <p class="page-footer__copyright">
+  	      Разработано
+  	      <a class="page-footer__copyright-link" href="#">HTML Academy</a>
+  	    </p>
+  	  </footer>
+  	</div>
 	</body>
 </html>

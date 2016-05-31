@@ -5,99 +5,98 @@
     <title>Седона</title>
   </head>
   <body>
-  	<header class="page-header">
-  		<nav class="main-nav  main-nav--closed">
-  			<button class="main-nav__close-btn">Закрыть меню навигации</button>
-  			<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a>Главная</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="#">Фото и видео</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="#">Форма отзыва</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="#">HTML Academy</a>
-					</li>
-  			</ul>
-  		</nav>
-  		<button class="main-nav__open-btn">Открыть меню навигации</button>
-  		<div class="page-header__logo">
-  			<img class="page-header__logo-picture" src="img/logo.tsvg" width="282" height="214" alt="Sedona logo">
-  		</div>
-  	</header>
-  	<main>
-  		<section class="advantages">
-  			<h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-  			<p class="advantages__description-text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-  			<ul class="advantages__list">
-  				<li class="advantages__item  advantages__item--blue-background">
-  					<h3 class="advantages__item-titel">Настоящий городок</h3>
-  					<span class="advantages__item-number">№1</span>
-  					<p class="advantages__item-description">Седона не атракцион для туристов, там течет своя жизнь</p>
-  					<img src="img/town-img.jpg" width="320" height="260" alt="Sedona town foto">
-  					<div class="advantages__item-wrapper">
-  						<ul class="advantages__sedona-highlights">
-  							<li class="advantages__sedona-highlight">
-  								<h4 class="advantages__sedona-highlight-title">Жилье</h4>
-  								<p class="advantages__sedona-highlight-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-  							</li>
-  							<li class="advantages__sedona-highlight">
-  								<h4 class="advantages__sedona-highlight-title">Сувениры</h4>
-  								<p class="advantages__sedona-highlight-description">Не только китайского, но и местного производства!</p>
-  							</li>
-  							<li class="advantages__sedona-highlight">
-  								<h4 class="advantages__sedona-highlight-title">Еда</h4>
-  								<p class="advantages__sedona-highlight-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-  							</li>
-  						</ul>
-  					</div>
-  				</li>
-  				<li class="advantages__item  advantages__item--blue-background">
-  					<h3 class="advantages__item-titel">Там есть мост дьявола</h3>
-  					<span class="advantages__item-number">№2</span>
-  					<p class="advantages__item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  					<img src="img/devil-bridge-img.jpg" width="320" height="260" alt="Devil bridge foto">
-  				</li>
-  				<li class="advantages__item">
-  					<h3 class="advantages__item-titel">Небольшая площадь</h3>
-  					<span class="advantages__item-number">№3</span>
-  					<p class="advantages__item-description">Все достопримечательности находятся очень близко</p>
-  				</li>
-  				<li class="advantages__item">
-  					<h3 class="advantages__item-titel">Красивая дорога</h3>
-  					<span class="advantages__item-number">№4</span>
-  					<p class="advantages__item-description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-  				</li>
-  				<li class="advantages__item">
-  					<h3 class="advantages__item-titel">Мало туристов</h3>
-  					<span class="advantages__item-number">№5</span>
-  					<p class="advantages__item-description">Большинство едет в Гранд Каньон и толпится там</p>
-  				</li>
-  			</ul>
-  		</section>
-  		<section class="hotel-booking">
-  			<h2 class="hotel-booking__title">Заинтересовались?</h2>
-  			<p class="hotel-booking__description">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-  			<a class="hotel-booking__search-btn" href="#">Найти гостиницу</a>
-  			<div class="hotel-booking__map"></div>
-  		</section>
-  	</main>
-  	<footer class="page-footer">
-  		<span class="page-footer__hashtag">#visitsedona</span>
-  		<p class="page-footer-social">
-  			<span class="social-links">
-  				<a class="sosial-link  social-link--tw" href="#">Twitter</a>
-  				<a class="sosial-link  social-link--fb" href="#">Facebook</a>
-  				<a class="sosial-link  social-link--yt" href="#">Youtube</a>
-  			</span>
-  		</p>
-  		<p class="page-footer__copyright">
-  			Разработано
-  			<a class="page-footer__copyright-link" href="#">HTML Academy</a>
-  		</p>
-  	</footer>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-nav  main-nav--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="main-nav__menu-btn main-nav__menu-btn--close">Открыть/закрыть меню навигации</button>
+        <div class="page-header__logo">
+          <img class="page-header__logo-picture" src="img/logo.tsvg" width="282" height="214" alt="Sedona logo">
+        </div>
+      </header>
+      <main>
+        <section class="advantages">
+          <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="advantages__description-text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+          <div class="advantages__item  advantages__item--blue-background">
+            <h3 class="advantages__item-titel">Настоящий городок</h3>
+            <span class="advantages__item-number">№1</span>
+            <p class="advantages__item-description">Седона не атракцион для туристов, там течет своя жизнь</p>
+            <div class="advantages__image-wrapper">
+              <img src="img/town-img.jpg" width="320" height="260" alt="Sedona town foto">
+            </div>
+            <div class="advantages__item-wrapper">
+              <div class="advantages__sedona-highlight">
+                <h4 class="advantages__sedona-highlight-title">Жилье</h4>
+                <p class="advantages__sedona-highlight-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+              <div class="advantages__sedona-highlight">
+                <h4 class="advantages__sedona-highlight-title">Сувениры</h4>
+                <p class="advantages__sedona-highlight-description">Не только китайского, но и местного производства!</p>
+              </div>
+              <div class="advantages__sedona-highlight">
+                <h4 class="advantages__sedona-highlight-title">Еда</h4>
+                <p class="advantages__sedona-highlight-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__item  advantages__item--blue-background">
+            <h3 class="advantages__item-titel">Там есть мост дьявола</h3>
+            <span class="advantages__item-number">№2</span>
+            <p class="advantages__item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="advantages__image-wrapper">
+              <img src="img/devil-bridge-img.jpg" width="320" height="260" alt="Devil bridge foto">
+            </div>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__item-titel">Небольшая площадь</h3>
+            <span class="advantages__item-number">№3</span>
+            <p class="advantages__item-description">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__item-titel">Красивая дорога</h3>
+            <span class="advantages__item-number">№4</span>
+            <p class="advantages__item-description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__item-titel">Мало туристов</h3>
+            <span class="advantages__item-number">№5</span>
+            <p class="advantages__item-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </section>
+        <section class="hotel-booking">
+          <h2 class="hotel-booking__title">Заинтересовались?</h2>
+          <p class="hotel-booking__description">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <a class="hotel-booking__search-btn" href="#">Найти гостиницу</a>
+          <div class="hotel-booking__map"></div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <span class="page-footer__hashtag">#visitsedona</span>
+        <div class="social-links">
+          <a class="sosial-link  social-link--tw" href="#">Twitter</a>
+          <a class="sosial-link  social-link--fb" href="#">Facebook</a>
+          <a class="sosial-link  social-link--yt" href="#">Youtube</a>
+        </div>
+        <p class="page-footer__copyright">
+          Разработано
+          <a class="page-footer__copyright-link" href="#">HTML Academy</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
