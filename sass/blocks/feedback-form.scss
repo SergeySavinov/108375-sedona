@@ -1,0 +1,122 @@
+.feedback-form { font-family: "PT Sans"; }
+
+.feedback-form__title {
+  margin: 0;
+
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.feedback-form__description-text {
+  margin: 0;
+
+  @include text-parameters(14px, 24px, normal);
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-form__part-title {
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.feedback-form__name-information-label,
+.feedback-form__contact-information-label {
+  @include text-parameters(14px, 26px, normal);
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.feedback-form__name-information-input,
+.feedback-form__contact-information-input {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.feedback-from__customer-opinion-textarea {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.feedback-form__telephone-number-warning {
+  display: block;
+
+  @include text-parameters(14px, 26px, normal);
+
+  color: #ff5c5c;
+}
+
+.feedback-form__impression-block-label {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+}
+
+.feedback-form__name-information-input::-webkit-input-placeholder,
+.feedback-form__contact-information-input::-webkit-input-placeholder,
+.feedback-from__customer-opinion-textarea::-webkit-input-placeholder {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+  opacity: 1;
+}
+
+.feedback-form__name-information-input::-moz-placeholder,
+.feedback-form__contact-information-input::-moz-placeholder,
+.feedback-from__customer-opinion-textarea::-moz-placeholder {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+  opacity: 1;
+}
+
+.feedback-form__name-information-input:-ms-input-placeholder,
+.feedback-form__contact-information-input:-ms-input-placeholder,
+.feedback-from__customer-opinion-textarea:-ms-input-placeholder {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+  opacity: 1;
+}
+
+.feedback-form__name-information-input:-ms-input-placeholder,
+.feedback-form__contact-information-input:-ms-input-placeholder,
+.feedback-from__customer-opinion-textarea:-ms-input-placeholder {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+  opacity: 1;
+}
+
+.feedback-form__name-information-input:-moz-placeholder,
+.feedback-form__contact-information-input:-moz-placeholder,
+.feedback-from__customer-opinion-textarea:-moz-placeholder {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+  opacity: 1;
+}
+
+.feedback-from__form-send-btn {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 49px;
+  padding-right: 49px;
+
+  @include text-parameters(21px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+  background-color: $blue-background-color;
+  border: none;
+
+  cursor: pointer;
+}

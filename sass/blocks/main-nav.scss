@@ -1,0 +1,16 @@
+.main-nav { background-color: $blue-background-color; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__link {
+  @include text-parameters(18px, 40px, bold);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #fff;
+}

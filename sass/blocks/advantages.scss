@@ -1,0 +1,76 @@
+.advantages {
+  font-family: "PT Sans";
+  font-size: 0;
+}
+
+.advantages__title {
+  margin: 0;
+
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.advantages__description-text {
+  margin: 0;
+
+  @include text-parameters(14px, 26px, bold);
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.advantages__item { background-color: #eeeeee; }
+
+.advantages__item--blue-background { background-color: $blue-background-color; }
+
+.advantages__item-title {
+  margin: 0;
+
+  @include text-parameters(14px, 26px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.advantages__item-title--white { color: #fff; }
+
+.advantages__item-number {
+  @include text-parameters(14px, 21px, normal);
+
+  color: $gray-text-color;
+}
+
+.advantages__item-number--white { color: #fff; }
+
+.advantages__item-description {
+  margin: 0;
+
+  @include text-parameters(14px, 21px, normal);
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.advantages__item-description--white { color: #fff; }
+
+.advantages__item-wrapper { background-color: #fff; }
+
+.advantages__sedona-highlight-title {
+  margin: 0;
+
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.advantages__sedona-highlight-description {
+  margin: 0;
+
+  @include text-parameters(14px, 21px, normal);
+  text-transform: uppercase;
+
+  color: #000;
+}

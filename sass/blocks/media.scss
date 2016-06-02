@@ -1,0 +1,56 @@
+.media { font-family: "PT Sans"; }
+
+.media__title {
+  margin: 0;
+
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.media__photo-block-description {
+  margin: 0;
+
+  @include text-parameters(14px, 24px, normal);
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.media__photo-titel {
+  @include text-parameters(14px, 24px, bold);
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.media__photo-author {
+  @include text-parameters(14px, 24px, normal);
+
+  color: $gray-text-color;
+}
+
+.media__like-btn {
+  text-decoration: none;
+
+  color: $gray-text-color;
+}
+
+.media__like-counter {
+  @include text-parameters(14px, 24px, normal);
+
+  color: $gray-text-color;
+}
+
+.media__video-block-title {
+  @include text-parameters(18px, 26px, bold);
+
+  color: #000;
+}
+
+.media__video-block-description {
+  @include text-parameters(14px, 24px, normal);
+
+  color: $gray-text-color;
+}
