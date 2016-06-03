@@ -1,18 +1,13 @@
-.hotel-booking { font-family: "PT Sans"; }
-
 .hotel-booking__title {
   margin: 0;
 
   @include text-parameters(21px, 26px, bold);
   text-transform: uppercase;
-
-  color: #000;
 }
 
 .hotel-booking__description {
   margin: 0;
 
-  @include text-parameters(14px, 24px, normal);
   text-transform: uppercase;
 
   color: $gray-text-color;
@@ -28,6 +23,7 @@
   @include text-parameters(21px, 26px, bold);
   text-transform: uppercase;
   text-decoration: none;
+  vertical-align: top;
 
   color: #fff;
   background-color: $blue-background-color;

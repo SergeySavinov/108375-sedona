@@ -1,18 +1,13 @@
-.feedback-form { font-family: "PT Sans"; }
-
 .feedback-form__title {
   margin: 0;
 
   @include text-parameters(18px, 26px, bold);
   text-transform: uppercase;
-
-  color: #000;
 }
 
 .feedback-form__description-text {
   margin: 0;
 
-  @include text-parameters(14px, 24px, normal);
   text-transform: uppercase;
 
   color: $gray-text-color;
@@ -22,13 +17,11 @@
 .feedback-form__part-title {
   @include text-parameters(18px, 26px, bold);
   text-transform: uppercase;
-
-  color: #000;
 }
 
 .feedback-form__name-information-label,
 .feedback-form__contact-information-label {
-  @include text-parameters(14px, 26px, normal);
+  line-height: 26px;
   text-transform: uppercase;
 
   color: $gray-text-color;
@@ -48,23 +41,18 @@
 .feedback-form__telephone-number-warning {
   display: block;
 
-  @include text-parameters(14px, 26px, normal);
+  line-height: 26px;
 
   color: #ff5c5c;
 }
 
-.feedback-form__impression-block-label {
-  @include text-parameters(18px, 26px, bold);
-
-  color: #000;
-}
+.feedback-form__impression-block-label { @include text-parameters(18px, 26px, bold); }
 
 .feedback-form__name-information-input::-webkit-input-placeholder,
 .feedback-form__contact-information-input::-webkit-input-placeholder,
 .feedback-from__customer-opinion-textarea::-webkit-input-placeholder {
   @include text-parameters(18px, 26px, bold);
 
-  color: #000;
   opacity: 1;
 }
 
@@ -73,7 +61,6 @@
 .feedback-from__customer-opinion-textarea::-moz-placeholder {
   @include text-parameters(18px, 26px, bold);
 
-  color: #000;
   opacity: 1;
 }
 
@@ -82,7 +69,6 @@
 .feedback-from__customer-opinion-textarea:-ms-input-placeholder {
   @include text-parameters(18px, 26px, bold);
 
-  color: #000;
   opacity: 1;
 }
 
@@ -91,7 +77,6 @@
 .feedback-from__customer-opinion-textarea:-ms-input-placeholder {
   @include text-parameters(18px, 26px, bold);
 
-  color: #000;
   opacity: 1;
 }
 
@@ -100,7 +85,6 @@
 .feedback-from__customer-opinion-textarea:-moz-placeholder {
   @include text-parameters(18px, 26px, bold);
 
-  color: #000;
   opacity: 1;
 }
 
