@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -10,20 +11,25 @@
         <nav class="main-nav  main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Фото и видео</a>
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Форма отзыва</a>
+              <a class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </nav>
         <button class="main-nav__menu-btn main-nav__menu-btn--close">Открыть/закрыть меню навигации</button>
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="index.html">
+            <img class="page-header__logo-picture" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona logo">
+          </a>
+        </div>
       </header>
       <main>
         <section class="feedback-form">
@@ -41,7 +47,7 @@
             </div>
             <div class="feedback-form__inputs-block">
               <div class="feedback-form__part-title">Контактная информация:</div>
-              <label class="feedback-form__contact-information-label" for="telephone-numbe">Контактный телефон:</label>
+              <label class="feedback-form__contact-information-label" for="telephone-number">Контактный телефон:</label>
               <input class="feedback-form__contact-information-input" id="telephone-number" name="telephone-number-field" type="tel" placeholder="Введите телефон">
               <span class="feedback-form__telephone-number-warning">Ошибка, перепроверьте номер</span>
               <label class="feedback-form__contact-information-label" for="customer-email">Контактный телефон:</label>

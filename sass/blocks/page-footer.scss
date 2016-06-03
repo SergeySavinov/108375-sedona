@@ -1,0 +1,11 @@
+.page-footer__hashtag {
+  @include text-parameters(21px, 26px, bold);
+  text-transform: uppercase;
+}
+
+.page-footer__copyright {
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: #000;
+}

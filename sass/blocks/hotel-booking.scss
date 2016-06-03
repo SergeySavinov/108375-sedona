@@ -1,0 +1,30 @@
+.hotel-booking__title {
+  margin: 0;
+
+  @include text-parameters(21px, 26px, bold);
+  text-transform: uppercase;
+}
+
+.hotel-booking__description {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.hotel-booking__search-btn {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  padding-right: 48px;
+
+  @include text-parameters(21px, 26px, bold);
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: top;
+
+  color: #fff;
+  background-color: $blue-background-color;
+}

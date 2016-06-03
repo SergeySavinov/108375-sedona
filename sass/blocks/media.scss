@@ -1,0 +1,36 @@
+.media__title {
+  margin: 0;
+
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+}
+
+.media__photo-block-description {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.media__photo-titel {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.media__photo-author { color: $gray-text-color; }
+
+.media__like-btn {
+  text-decoration: none;
+
+  color: $gray-text-color;
+}
+
+.media__like-counter { color: $gray-text-color; }
+
+.media__video-block-title {
+  @include text-parameters(18px, 26px, bold);
+  text-transform: uppercase;
+}
+
+.media__video-block-description { color: $gray-text-color; }
