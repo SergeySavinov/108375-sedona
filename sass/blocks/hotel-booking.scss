@@ -1,3 +1,5 @@
+.hotel-booking { text-align: center; }
+
 .hotel-booking__title {
   margin: 0;
 
@@ -15,6 +17,7 @@
 
 .hotel-booking__search-btn {
   display: inline-block;
+  margin-bottom: 30px;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 48px;
@@ -27,4 +30,10 @@
 
   color: #fff;
   background-color: $blue-background-color;
+}
+
+.hotel-booking__map {
+  height: 350px; //временно
+
+  background-image: url("../img/bg-map-mobile@1x.jpg");
 }

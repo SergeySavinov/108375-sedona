@@ -3,20 +3,27 @@
 
   @include text-parameters(18px, 26px, bold);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feedback-form__description-text {
   margin: 0;
 
   text-transform: uppercase;
+  text-align: center;
 
   color: $gray-text-color;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.feedback-form__inputs-block { margin-bottom: 20px;} //временно
+
 .feedback-form__part-title {
+  margin-bottom: 20px; //верменно
+
   @include text-parameters(18px, 26px, bold);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feedback-form__name-information-label,
@@ -34,6 +41,8 @@
 }
 
 .feedback-from__customer-opinion-textarea {
+  width: 100%;
+
   background-color: #f2f2f2;
   border: none;
 }
@@ -46,7 +55,9 @@
   color: #ff5c5c;
 }
 
-.feedback-form__impression-block-label { @include text-parameters(18px, 26px, bold); }
+.feedback-form__impression-block-label,
+.feedback-form__place-block-label,
+{ @include text-parameters(18px, 26px, bold); }
 
 .feedback-form__name-information-input::-webkit-input-placeholder,
 .feedback-form__contact-information-input::-webkit-input-placeholder,
@@ -103,4 +114,62 @@
   border: none;
 
   cursor: pointer;
+}
+
+.feedback-form__note {
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+@media (min-width: $tablet-screen-width) {
+  .feedback-form__form { position: relative; }
+
+  .feedback-form__inputs-block--half-width { width: 50%; }
+
+  .feedback-form__inputs-block--right {
+    float: right;
+    margin-bottom: 150px;
+  }
+
+  .feedback-form__inputs-block--left { float: left; }
+
+  .feedback-form__inputs-block--out-stream {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+  }
+
+  .feedback-form__telephone-number-warning {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+
+    display: inline-block;
+  }
+
+  .feedback-from__inputs-block--clear { clear: both; }
+
+  .feedback-form__contact-information-input { width: 100%; }
+
+  .feedback-form__note { float: right; }
+
+  .feedback-form__place-block-label {
+    display: inline-block;
+    width: 47%;
+  }
+
+}
+
+@media (min-width: $desktop-screen-width) {
+  .feedback-form__telephone-number-warning {
+    top: 15px;
+    left: 0;
+  }
+
+  .feedback-form__contact-information-input { width: 30%; }
+
+  .feedback-form__place-block-label { width: 23%; }
 }

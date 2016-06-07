@@ -14,3 +14,16 @@
 
   color: #fff;
 }
+
+@media (min-width: $tablet-screen-width) {
+  .main-nav { background-color: #fff; }
+  .main-nav__item {
+    display: inline-block;
+    margin-right: 20px; //верменно
+  }
+  .main-nav__link {
+    line-height: 26px;
+
+    color: #000;
+  }
+}
