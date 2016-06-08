@@ -17,6 +17,8 @@
 
 .media__photo-item { @include clearfix; }
 
+.media__photo-item img { width: 100%; }
+
 .media__photo-titel {
   font-weight: bold;
   text-transform: uppercase;
@@ -36,6 +38,8 @@
   height: 201px;
 
   background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .media__video-block-title {
@@ -68,6 +72,12 @@
 
   .media__like-btn { float: right; }
 
+  .media__video-container {
+    width: 648px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: $desktop-screen-width) {
@@ -93,4 +103,10 @@
   .media__like-counter { color: #fff; }
 
   .media__photo-author { color: #fff; }
+
+  .media__video-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
