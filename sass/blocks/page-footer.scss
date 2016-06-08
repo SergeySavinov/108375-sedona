@@ -1,3 +1,5 @@
+.page-footer { text-align: center; }
+
 .page-footer__hashtag {
   @include text-parameters(21px, 26px, bold);
   text-transform: uppercase;
@@ -8,4 +10,12 @@
   text-transform: uppercase;
 
   color: #000;
+}
+
+@media (min-width: $tablet-screen-width) {
+  .page-footer { text-align: left;}
+
+  .page-footer__hashtag { margin-right: 15%; } // временно
+
+  .page-footer__copyright { display: inline-block; }
 }

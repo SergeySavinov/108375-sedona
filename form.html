@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -23,8 +24,8 @@
               <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
+          <button class="main-nav__menu-btn main-nav__menu-btn--close">Открыть/закрыть меню навигации</button>
         </nav>
-        <button class="main-nav__menu-btn main-nav__menu-btn--close">Открыть/закрыть меню навигации</button>
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
             <img class="page-header__logo-picture" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona logo">
@@ -35,8 +36,8 @@
         <section class="feedback-form">
           <h2 class="feedback-form__title">Оставьте свой отзыв</h2>
           <p class="feedback-form__description-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достоопримечательностях</p>
-          <form action="/echo" method="post">
-            <div class="feedback-form__inputs-block">
+          <form class="feedback-form__form" action="/echo" method="post">
+            <div class="feedback-form__inputs-block  feedback-form__inputs-block--half-width  feedback-form__inputs-block--right">
               <div class="feedback-form__part-title">Представьтесь, пожалуйста:</div>
               <label class="feedback-form__name-information-label" for="customer-first-name">Имя</label>
               <input class="feedback-form__name-information-input" id="customer-first-name" name="customer-first-name-field" type="text" placeholder="Петр">
@@ -45,15 +46,15 @@
               <label class="feedback-form__name-information-label" for="customer-patronymic">Отчество</label>
               <input class="feedback-form__name-information-input" id="customer-patronymic" name="customer-patronymic-field" type="text" placeholder="Александрович">
             </div>
-            <div class="feedback-form__inputs-block">
+            <div class="feedback-form__inputs-block  feedback-form__inputs-block--out-stream">
               <div class="feedback-form__part-title">Контактная информация:</div>
               <label class="feedback-form__contact-information-label" for="telephone-number">Контактный телефон:</label>
               <input class="feedback-form__contact-information-input" id="telephone-number" name="telephone-number-field" type="tel" placeholder="Введите телефон">
               <span class="feedback-form__telephone-number-warning">Ошибка, перепроверьте номер</span>
-              <label class="feedback-form__contact-information-label" for="customer-email">Контактный телефон:</label>
+              <label class="feedback-form__contact-information-label" for="customer-email">Электронная почта:</label>
               <input class="feedback-form__contact-information-input" id="customer-email" name="email-field" type="email" placeholder="Введите e-mail">
             </div>
-            <div class="feedback-form__inputs-block">
+            <div class="feedback-form__inputs-block  feedback-form__inputs-block--half-width feedback-form__inputs-block--left">
               <div class="feedback-form__part-title">Ваше общее впечатление:</div>
               <input class="feedback-form__impression-block-input" id="customer-impression-1" name="customer-impression" type="radio" checked>
               <label class="feedback-form__impression-block-label" for="customer-impression-1">Скорее положительное</label>
@@ -62,22 +63,26 @@
               <input class="feedback-form__impression-block-input" id="customer-impression-3" name="customer-impression" type="radio">
               <label class="feedback-form__impression-block-label" for="customer-impression-3">Затрудняюсь ответить</label>
             </div>
-            <div class="feedback-from__inputs-block">
+            <div class="feedback-form__inputs-block  feedback-from__inputs-block--clear">
               <div class="feedback-form__part-title">Посещенные достопримечательности:</div>
               <input class="feedback-form__visited-place-input" id="visited-place-1" name="visited-place-db" type="checkbox" checked>
-              <label class="feedback-form__impression-block-label" for="visited-place-1">Мост Дьявола</label>
+              <label class="feedback-form__place-block-label" for="visited-place-1">Мост Дьявола</label>
               <input class="feedback-form__visited-place-input" id="visited-place-2" name="visited-place-sp" type="checkbox" checked>
-              <label class="feedback-form__impression-block-label" for="visited-place-2">Слайд парк</label>
+              <label class="feedback-form__place-block-label" for="visited-place-2">Слайд парк</label>
               <input class="feedback-form__visited-place-input" id="visited-place-3" name="visited-place-bm" type="checkbox">
-              <label class="feedback-form__impression-block-label" for="visited-place-3">Гора-Колокол</label>
+              <label class="feedback-form__place-block-label" for="visited-place-3">Гора-Колокол</label>
               <input class="feedback-form__visited-place-input" id="visited-place-4" name="visited-place-rr" type="checkbox" checked>
-              <label class="feedback-form__impression-block-label" for="visited-place-4">Красные скалы</label>
+              <label class="feedback-form__place-block-label" for="visited-place-4">Красные скалы</label>
             </div>
             <div class="feedback-form__inputs-block">
               <div class="feedback-form__part-title">Оишите свои эмоции</div>
               <textarea class="feedback-from__customer-opinion-textarea" id="customer-opinion" name="customer-opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <button class="feedback-from__form-send-btn" type="submit">Отправить отзыв</button>
+            <span class="feedback-form__note">
+              <sup>*</sup>
+              - Обязательные поля
+              </span>
           </form>
         </section>
       </main>

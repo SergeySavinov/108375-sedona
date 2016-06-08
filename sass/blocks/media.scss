@@ -3,15 +3,21 @@
 
   @include text-parameters(18px, 26px, bold);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .media__photo-block-description {
   margin: 0;
 
   text-transform: uppercase;
+  text-align: center;
 
   color: $gray-text-color;
 }
+
+.media__photo-item { @include clearfix; }
+
+.media__photo-item img { width: 100%; }
 
 .media__photo-titel {
   font-weight: bold;
@@ -28,9 +34,79 @@
 
 .media__like-counter { color: $gray-text-color; }
 
+.media__video-container {
+  height: 201px;
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .media__video-block-title {
   @include text-parameters(18px, 26px, bold);
   text-transform: uppercase;
+  text-align: center;
 }
 
-.media__video-block-description { color: $gray-text-color; }
+.media__video-block-description {
+  text-align: center;
+
+  color: $gray-text-color;
+}
+
+.media__player-buttons { text-align: center; }
+
+@media (min-width: $tablet-screen-width) {
+  .media__photo-item {
+    display: inline-block;
+    width: 49%;
+  }
+
+  .media__photo-item--full-width { width: 100%; }
+
+  .media__photo-item img {
+    width: 100%;
+  }
+
+  .media__photo-description { float: left; }
+
+  .media__like-btn { float: right; }
+
+  .media__video-container {
+    width: 648px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-screen-width) {
+  .media__photo-item {
+    position: relative;
+
+    width: 33.1%;
+  }
+
+  .media__photo-item--full-width { width: 100%; }
+
+  .media__photo-text-block {
+    position: absolute;
+    bottom: 10px;
+
+    width: 100%;
+
+    color: #fff;
+  }
+
+  .media__like-btn { color: #fff; }
+
+  .media__like-counter { color: #fff; }
+
+  .media__photo-author { color: #fff; }
+
+  .media__video-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
