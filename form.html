@@ -8,13 +8,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--small-background">
         <nav class="main-nav  main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--logo-gap">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
@@ -37,61 +37,88 @@
           <h2 class="feedback-form__title">Оставьте свой отзыв</h2>
           <p class="feedback-form__description-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достоопримечательностях</p>
           <form class="feedback-form__form" action="/echo" method="post">
-            <div class="feedback-form__inputs-block  feedback-form__inputs-block--half-width  feedback-form__inputs-block--right">
-              <div class="feedback-form__part-title">Представьтесь, пожалуйста:</div>
-              <label class="feedback-form__name-information-label" for="customer-first-name">Имя</label>
-              <input class="feedback-form__name-information-input" id="customer-first-name" name="customer-first-name-field" type="text" placeholder="Петр">
-              <label class="feedback-form__name-information-label" for="customer-second-name">Фамилия</label>
-              <input class="feedback-form__name-information-input" id="customer-second-name" name="customer-second-name-field" type="text" placeholder="Иванов">
-              <label class="feedback-form__name-information-label" for="customer-patronymic">Отчество</label>
-              <input class="feedback-form__name-information-input" id="customer-patronymic" name="customer-patronymic-field" type="text" placeholder="Александрович">
-            </div>
-            <div class="feedback-form__inputs-block  feedback-form__inputs-block--out-stream">
-              <div class="feedback-form__part-title">Контактная информация:</div>
-              <label class="feedback-form__contact-information-label" for="telephone-number">Контактный телефон:</label>
-              <input class="feedback-form__contact-information-input" id="telephone-number" name="telephone-number-field" type="tel" placeholder="Введите телефон">
-              <span class="feedback-form__telephone-number-warning">Ошибка, перепроверьте номер</span>
-              <label class="feedback-form__contact-information-label" for="customer-email">Электронная почта:</label>
-              <input class="feedback-form__contact-information-input" id="customer-email" name="email-field" type="email" placeholder="Введите e-mail">
-            </div>
-            <div class="feedback-form__inputs-block  feedback-form__inputs-block--half-width feedback-form__inputs-block--left">
-              <div class="feedback-form__part-title">Ваше общее впечатление:</div>
-              <input class="feedback-form__impression-block-input" id="customer-impression-1" name="customer-impression" type="radio" checked>
-              <label class="feedback-form__impression-block-label" for="customer-impression-1">Скорее положительное</label>
-              <input class="feedback-form__impression-block-input" id="customer-impression-2" name="customer-impression" type="radio">
-              <label class="feedback-form__impression-block-label" for="customer-impression-2">Скорее отрицательное</label>
-              <input class="feedback-form__impression-block-input" id="customer-impression-3" name="customer-impression" type="radio">
-              <label class="feedback-form__impression-block-label" for="customer-impression-3">Затрудняюсь ответить</label>
-            </div>
-            <div class="feedback-form__inputs-block  feedback-from__inputs-block--clear">
-              <div class="feedback-form__part-title">Посещенные достопримечательности:</div>
-              <input class="feedback-form__visited-place-input" id="visited-place-1" name="visited-place-db" type="checkbox" checked>
-              <label class="feedback-form__place-block-label" for="visited-place-1">Мост Дьявола</label>
-              <input class="feedback-form__visited-place-input" id="visited-place-2" name="visited-place-sp" type="checkbox" checked>
-              <label class="feedback-form__place-block-label" for="visited-place-2">Слайд парк</label>
-              <input class="feedback-form__visited-place-input" id="visited-place-3" name="visited-place-bm" type="checkbox">
-              <label class="feedback-form__place-block-label" for="visited-place-3">Гора-Колокол</label>
-              <input class="feedback-form__visited-place-input" id="visited-place-4" name="visited-place-rr" type="checkbox" checked>
-              <label class="feedback-form__place-block-label" for="visited-place-4">Красные скалы</label>
-            </div>
-            <div class="feedback-form__inputs-block">
-              <div class="feedback-form__part-title">Оишите свои эмоции</div>
-              <textarea class="feedback-from__customer-opinion-textarea" id="customer-opinion" name="customer-opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
-            <button class="feedback-from__form-send-btn" type="submit">Отправить отзыв</button>
-            <span class="feedback-form__note">
-              <sup>*</sup>
-              - Обязательные поля
+            <div class="feedback-form__form-wrapper">
+              <div class="feedback-form__inputs-block feedback-form__inputs-block--half-width">
+                <div class="feedback-form__part-title  feedback-form__part-title--custom-indent-1">Представьтесь<span>, пожалуйста</span>:</div>
+                <div class="feedback-form__input-name-wrapper">
+                  <label class="feedback-form__name-information-label" for="customer-first-name">Имя:</label>
+                  <input class="feedback-form__name-information-input" id="customer-first-name" name="customer-first-name-field" type="text" placeholder="Петр">
+                </div>
+                <div class="feedback-form__input-name-wrapper">
+                  <label class="feedback-form__name-information-label" for="customer-second-name">Фамилия:</label>
+                  <input class="feedback-form__name-information-input" id="customer-second-name" name="customer-second-name-field" type="text" placeholder="Иванов">
+                </div>
+                <div class="feedback-form__input-name-wrapper  feedback-form__input-name-wrapper--no-margin">
+                  <label class="feedback-form__name-information-label" for="customer-patronymic">Отчество:</label>
+                  <input class="feedback-form__name-information-input" id="customer-patronymic" name="customer-patronymic-field" type="text" placeholder="Александрович">
+                </div>
+              </div>
+              <div class="feedback-form__inputs-block">
+                <div class="feedback-form__part-title  feedback-form__part-title--custom-indent-4">Контактная информация:</div>
+                <div class="feedback-form__input-contact-wrapper  feedback-form__input-contact-wrapper-change--direction">
+                  <label class="feedback-form__contact-information-label  feedback-form__contact-information-label--change-direction" for="telephone-number">
+                  <span>Контактный </span>
+                  телефон:
+                  </label>
+                  <input class="feedback-form__contact-information-input  feedback-form__contact-information-input--change-direction" id="telephone-number" name="telephone-number-field" type="tel" placeholder="Введите телефон">
+                  <span class="feedback-form__phone-icon  feedback-form__phone-icon--change-direction"></span>
+                  <span class="feedback-form__telephone-number-warning  feedback-form__telephone-number-warning--change-direction">Ошибка, перепроверьте номер</span>
+                </div>
+                <div class="feedback-form__input-contact-wrapper">
+                  <label class="feedback-form__contact-information-label  feedback-form__contact-information-label--custom-indent" for="customer-email">Электронная почта:</label>
+                  <input class="feedback-form__contact-information-input" id="customer-email" name="email-field" type="email" placeholder="Введите e-mail">
+                  <span class="feedback-form__letter-icon"></span>
+                </div>
+              </div>
+              <div class="feedback-form__inputs-block  feedback-form__inputs-block--custom-padding-1  feedback-form__inputs-block--half-width">
+                <div class="feedback-form__part-title  feedback-form__part-title--custom-indent-2">Ваше общее впечатление:</div>
+                <input class="feedback-form__impression-block-input" id="customer-impression-1" name="customer-impression" type="radio" checked>
+                <label class="feedback-form__impression-block-label" for="customer-impression-1">Скорее положительное</label>
+                <input class="feedback-form__impression-block-input" id="customer-impression-2" name="customer-impression" type="radio">
+                <label class="feedback-form__impression-block-label" for="customer-impression-2">Скорее отрицательное</label>
+                <input class="feedback-form__impression-block-input" id="customer-impression-3" name="customer-impression" type="radio">
+                <label class="feedback-form__impression-block-label" for="customer-impression-3">Затрудняюсь ответить</label>
+              </div>
+              <div class="feedback-form__inputs-block  feedback-form__inputs-block--custom-padding-2">
+                <div class="feedback-form__part-title  feedback-form__part-title--custom-indent-3">Посещенные достопримечательности:</div>
+                <input class="feedback-form__visited-place-input" id="visited-place-1" name="visited-place-db" type="checkbox" checked>
+                <label class="feedback-form__place-block-label" for="visited-place-1">Мост Дьявола</label>
+                <input class="feedback-form__visited-place-input" id="visited-place-2" name="visited-place-sp" type="checkbox" checked>
+                <label class="feedback-form__place-block-label" for="visited-place-2">Слайд парк</label>
+                <input class="feedback-form__visited-place-input" id="visited-place-3" name="visited-place-bm" type="checkbox">
+                <label class="feedback-form__place-block-label" for="visited-place-3">Гора-Колокол</label>
+                <input class="feedback-form__visited-place-input" id="visited-place-4" name="visited-place-rr" type="checkbox" checked>
+                <label class="feedback-form__place-block-label" for="visited-place-4">Красные скалы</label>
+              </div>
+              <div class="feedback-form__inputs-block  feedback-form__inputs-block--no-border">
+                <div class="feedback-form__part-title  feedback-form__part-title--custom-indent-5">Опишите свои эмоции</div>
+                <textarea class="feedback-from__customer-opinion-textarea" id="customer-opinion" name="customer-opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
+              <button class="feedback-from__form-send-btn" type="submit">Отправить отзыв</button>
+              <span class="feedback-form__note">
+                <sup>*</sup>
+                - Обязательные поля
               </span>
+              <div class="feedback-form__pop-up-error">
+                <div class="feedback-form__pop-up-title">Что-то пошло не так!</div>
+                <p class="feedback-form__pop-up-description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
+                <a class="feedback-form__pop-up-btn" href="#">Ok</a>
+              </div>
+              <div class="feedbackform__pop-up-success">
+                <div class="feedback-form__pop-up-title">Ваш отзыв отправлен!</div>
+                <p class="feedback-form__pop-up-description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+                <a class="feedback-form__pop-up-btn" href="#">Зактрыть окно</a>
+              </div>
+            </div>
           </form>
         </section>
       </main>
   		<footer class="page-footer">
         <span class="page-footer__hashtag">#visitsedona</span>
         <div class="social-links">
-          <a class="sosial-link  social-link--tw" href="#">Twitter</a>
-          <a class="sosial-link  social-link--fb" href="#">Facebook</a>
-          <a class="sosial-link  social-link--yt" href="#">Youtube</a>
+          <a class="social-link  social-link--tw" href="#">Twitter</a>
+          <a class="social-link  social-link--fb" href="#">Facebook</a>
+          <a class="social-link  social-link--yt" href="#">Youtube</a>
         </div>
         <p class="page-footer__copyright">
           Разработано

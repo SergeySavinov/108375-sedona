@@ -1,30 +1,96 @@
-.main-nav { background-color: $blue-background-color; }
+.main-nav {
+  position: relative;
+
+  background-color: #fff;
+}
 
 .main-nav__list {
   margin: 0;
   padding: 0;
 
+  background-color: $blue-background-color;
   list-style: none;
 }
 
+//.main-nav__list--menu-closed { display: none; }
+
+.main-nav__item {
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.main-nav__item:first-child { border-top: none; }
+
+.main-nav__item:last-child {
+  border-bottom: none;
+  box-shadow: inset 0 -4px 5px -2px rgba(0, 0, 0, 0.15);
+}
+
 .main-nav__link {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
   @include text-parameters(18px, 40px, bold);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   color: #fff;
 }
 
+.main-nav__menu-btn {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-image: url("../img/icon-cross.svg");
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+//.main-nav__menu-btn--open-menu { background-image: url("../img/icon-menu.svg"); }
+
 @media (min-width: $tablet-screen-width) {
-  .main-nav { background-color: #fff; }
-  .main-nav__item {
-    display: inline-block;
-    margin-right: 70px; //верменно
+  .main-nav {
+    padding-top: 8px;
+    padding-bottom: 10px;
   }
 
+  .main-nav__list {
+    display: flex;
+
+    background-color: #fff;
+  }
+
+  .main-nav__item {
+    width: 20%;
+
+    text-align: center;
+
+    border: none;
+  }
+
+  .main-nav__item:last-child {
+    box-shadow: none;
+  }
+
+  .main-nav__item--logo-gap { margin-right: auto; }
+
   .main-nav__link {
-    line-height: 26px;
+    @include text-parameters(14px, 26px, bold);
 
     color: #000;
+  }
+
+  .main-nav__menu-btn {
+    display: none;
   }
 }

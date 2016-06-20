@@ -1,0 +1,28 @@
+.social-link {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+
+  font-size: 0;
+
+  background: #81b3d2;
+}
+
+.social-link--tw {
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.social-link--fb {
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.social-link--yt {
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
