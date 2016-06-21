@@ -146,6 +146,7 @@
   padding-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
+  resize: none;
 
   background-color: #f2f2f2;
   border: none;
@@ -291,34 +292,6 @@
   text-transform: uppercase;
 
   color: $gray-text-color;
-}
-
-.feedback-form__pop-up-error { display: none; }
-
-.feedbackform__pop-up-success { display: none; }
-
-.feedback-form__pop-up-title {
-  @include text-parameters(30px, 40px, bold);
-  text-transform: uppercase;
-}
-
-.feedback-form__pop-up-description {
-  margin: 0;
-
-  text-transform: uppercase;
-
-  color: $gray-text-color;
-}я
-
-.feedback-form__pop-up-btn {
-  display: inline-block;
-
-  @include text-parameters(21px, 26px, bold);
-  text-decoration: none;
-  text-transform: uppercase;
-
-  color: #fff;
-  background-color: $blue-background-color;
 }
 
 @media (min-width: $tablet-screen-width) {

@@ -1,0 +1,25 @@
+.pop-up-error { display: none; }
+
+.pop-up-error__title {
+  @include text-parameters(30px, 40px, bold);
+  text-transform: uppercase;
+}
+
+.pop-up-error__description {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.pop-up-error__btn {
+  display: inline-block;
+
+  @include text-parameters(21px, 26px, bold);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: $blue-background-color;
+}
