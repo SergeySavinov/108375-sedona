@@ -1,0 +1,25 @@
+.pop-up-success { display: none; }
+
+.pop-up-success__title {
+  @include text-parameters(30px, 40px, bold);
+  text-transform: uppercase;
+}
+
+.pop-up-success__description {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  color: $gray-text-color;
+}
+
+.pop-up-success__btn {
+  display: inline-block;
+
+  @include text-parameters(21px, 26px, bold);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: $blue-background-color;
+}

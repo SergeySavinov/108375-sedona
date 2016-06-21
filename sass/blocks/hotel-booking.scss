@@ -1,7 +1,12 @@
-.hotel-booking { text-align: center; }
+.hotel-booking {
+  margin-bottom: 36px;
+
+  text-align: center;
+}
 
 .hotel-booking__title {
   margin: 0;
+  margin-bottom: 19px;
 
   @include text-parameters(21px, 26px, bold);
   text-transform: uppercase;
@@ -9,6 +14,9 @@
 
 .hotel-booking__description {
   margin: 0;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   text-transform: uppercase;
 
@@ -17,11 +25,11 @@
 
 .hotel-booking__search-btn {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 49px;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 47px;
+  padding-right: 47px;
 
   @include text-parameters(21px, 26px, bold);
   text-transform: uppercase;
@@ -38,4 +46,35 @@
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: $tablet-screen-width) {
+  .hotel-booking__title {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .hotel-booking__description {
+    margin-bottom: 42px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .hotel-booking__search-btn {
+    margin-bottom: 57px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+@media (min-width: $desktop-screen-width) {
+  .hotel-booking__description {
+    margin-bottom: 46px;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .hotel-booking__search-btn { margin-bottom: 67px; }
 }
