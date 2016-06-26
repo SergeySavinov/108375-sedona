@@ -29,16 +29,23 @@
 
   font-size: 0;
   vertical-align: middle;
-
-  background-image: url("../img/logo-htmlacademy.svg");
 }
+
+.page-footer__academy-logo {
+
+}
+
+.page-footer__academy-logo:hover { fill: #81b3d2; }
+
+.page-footer__academy-logo:active { fill: #b2b2b2; }
 
 @media (min-width: $tablet-screen-width) {
   .page-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 36px;
+    margin-bottom: 0;
+    padding-bottom: 36px;
 
     text-align: left;
   }

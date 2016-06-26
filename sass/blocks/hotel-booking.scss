@@ -40,6 +40,32 @@
   background-color: $blue-background-color;
 }
 
+.hotel-booking__search-btn:hover { background-color: #669ec0; }
+
+.hotel-booking__search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.hotel-booking__search-btn--disabled,
+.hotel-booking__search-btn--disabled:hover,
+.hotel-booking__search-btn--disabled:active {
+  background-color: #e5e5e5;
+  color: #fff;
+}
+
+@keyframes btn-color-change {
+  0% { background-color: #5496bd; }
+  50% { background-color: #3e84ae; }
+  100% { background-color: #5496bd; }
+}
+
+.hotel-booking__search-btn--color-animation {
+  animation-name: btn-color-change;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
 .hotel-booking__map {
   height: 350px; //временно
 
@@ -67,6 +93,8 @@
     padding-left: 135px;
     padding-right: 135px;
   }
+
+  .hotel-booking__map { background-image: url("../img/bg-map-tablet@1x.jpg"); }
 }
 
 @media (min-width: $desktop-screen-width) {
@@ -77,4 +105,6 @@
   }
 
   .hotel-booking__search-btn { margin-bottom: 67px; }
+
+  .hotel-booking__map { background-image: url("../img/bg-map-desktop@1x.jpg"); }
 }
