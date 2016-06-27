@@ -29,7 +29,7 @@
   margin-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 10px;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -53,19 +53,24 @@
 
 .media__like-btn {
   display: inline-block;
-  height: 21px;
-  padding-left: 37px;
+
 
   font-size: 0;
   text-decoration: none;
 
   color: $gray-text-color;
-  background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
+}
+
+.media__like-btn svg {
+  margin-right: 18px;
+
+  fill: #b2b2b2;
 }
 
 .media__like-counter {
   font-size: 14px;
+  vertical-align: top;
 
   color: $gray-text-color;
 }
@@ -160,11 +165,9 @@
 }
 
 .media__restart-btn {
-  width: 16px;
-  height: 20px;
-  margin-left: 25px;
+  height: 28px;
+  margin-left: 20px;
 
-  background-image: url("../img/icon-video-replay.svg");
   background-color: transparent;
   border: none;
 
@@ -172,12 +175,10 @@
 }
 
 .media__subtitles-btn {
-  width: 32px;
-  height: 20px;
+  height: 26px;
   margin-left: auto;
-  margin-right: 31px;
+  margin-right: 19px;
 
-  background-image: url("../img/icon-video-subtitles.svg");
   background-color: transparent;
   border: none;
 
@@ -185,15 +186,29 @@
 }
 
 .media__full-screan-btn {
-  width: 20px;
-  height: 20px;
-  margin-right: 23px;
+  height: 26px;
+  margin-right: 17px;
 
-  background-image: url("../img/icon-video-fullscreen.svg");
   background-color: transparent;
   border: none;
 
   cursor: pointer;
+}
+
+.media__restart-btn svg,
+.media__subtitles-btn svg,
+.media__full-screan-btn svg { fill: #5c6870; }
+
+.media__restart-btn:hover svg,
+.media__subtitles-btn:hover svg,
+.media__full-screan-btn:hover svg { fill: #333333; }
+
+.media__restart-btn:active svg,
+.media__subtitles-btn:active svg,
+.media__full-screan-btn:active svg { fill: #c1c1c1; }
+
+@media (max-width: $tablet-screen-width) and (min-resolution: $min-resolution-dpi), (max-width: $tablet-screen-width) and (min-resolution: $min-resolution-dppx) {
+  .media__video-container { background-image: url(../img/video-mobile@2x.jpg); }
 }
 
 @media (min-width: $tablet-screen-width) {
@@ -266,8 +281,13 @@
   }
 
   .media__like-btn--custom-indent {
-    margin-bottom: 5px;
-    margin-right: 6px;
+    padding-top: 5px;
+  }
+
+  .media__like-btn svg {
+    margin-right: 15px;
+
+    fill: #a9a9a9;
   }
 
   .media__video-container {
@@ -276,6 +296,8 @@
     margin-bottom: 76px;
     margin-left: auto;
     margin-right: auto;
+
+    background-image: url("../img/video-tablet@1x.jpg");
   }
 
   .media__video-block-title {
@@ -314,9 +336,25 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .media__restart-btn { margin-left: 35px; }
+  .media__restart-btn { margin-left: 30px; }
 
-  .media__full-screan-btn { margin-right: 41px; }
+  .media__full-screan-btn { margin-right: 34px; }
+
+  .media__restart-btn svg,
+  .media__subtitles-btn svg,
+  .media__full-screan-btn svg { fill: #fff; }
+
+  .media__restart-btn:hover svg,
+  .media__subtitles-btn:hover svg,
+  .media__full-screan-btn:hover svg { fill: #fff; }
+
+  .media__restart-btn:active svg,
+  .media__subtitles-btn:active svg,
+  .media__full-screan-btn:active svg { fill: #fff; }
+}
+
+@media (min-width: $tablet-screen-width) and (min-resolution: $min-resolution-dpi), (min-width: $tablet-screen-width) and (min-resolution: $min-resolution-dppx) {
+  .media__video-container { background-image: url("../img/video-tablet@2x.jpg"); }
 }
 
 @media (min-width: $desktop-screen-width) {
@@ -360,11 +398,15 @@
 
   .media__photo-author { color: #fff; }
 
+  .media__like-btn svg { fill: #fff; }
+
   .media__video-container {
     width: 800px;
     margin-bottom: 121px;
     margin-left: auto;
     margin-right: auto;
+
+    background-image: url("../img/video-desktop@1x.jpg");
   }
 
   .media__video-block-description {
@@ -374,4 +416,8 @@
   }
 
   .media__progress-bar { width: 540px; }
+}
+
+@media (min-width: $desktop-screen-width) and (min-resolution: $min-resolution-dpi), (min-width: $desktop-screen-width) and (min-resolution: $min-resolution-dppx) {
+  .media__video-container { background-image: url("../img/video-desktop@2x.jpg"); }
 }

@@ -7,6 +7,7 @@
 
 .advantages__title {
   margin: 0;
+  margin-top: -2px;
   margin-bottom: 27px;
   padding-left: 25px;
   padding-right: 25px;
@@ -21,7 +22,6 @@
   padding-right: 20px;
 
   line-height: 26px;
-  font-weight: bold;
   text-transform: uppercase;
 
   color: $gray-text-color;
@@ -127,31 +127,39 @@
 }
 
 .advantages__sedona-highlight {
+  position: relative;
+
   padding-top: 29px;
   padding-left: 70px;
 
   text-align: left;
 }
 
-.advantages__sedona-highlight--home-img {
-  background-image: url("../img/icon-house.svg");
-  background-repeat: no-repeat;
-  background-size: 38px auto;
-  background-position: 21px 21px;
+.advantages__highlight-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 18px;
 }
 
-.advantages__sedona-highlight--gift-img {
-  background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  background-size: 32px auto;
-  background-position: 25px 18px;
+.advantages__highlight-image-home {
+  width: 38px;
+  margin-left: 3px;
+
+  fill: #81b3d2;
 }
 
-.advantages__sedona-highlight--burger-img {
-  background-image: url("../img/icon-burger.svg");
-  background-repeat: no-repeat;
-  background-size: 40px auto;
-  background-position: 18px 22px;
+.advantages__highlight-image-gift {
+  width: 32px;
+  margin-left: 7px;
+
+  fill: #81b3d2;
+}
+
+.advantages__highlight-image-food {
+  width: 40px;
+  margin-top: 5px;
+
+  fill: #81b3d2;
 }
 
 .advantages__sedona-highlight-title {
@@ -181,8 +189,10 @@
   }
 
   .advantages__title {
+    margin-top: -17px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 
     font-size: 21px;
   }
@@ -261,29 +271,24 @@
   .advantages__sedona-highlight {
     width: 33.333333%;
     padding: 0;
-    padding-top: 155px;
+    padding-top: 55px;
 
     text-align: center;
   }
 
-  .advantages__sedona-highlight--home-img {
+  .advantages__sedona-highlight--changed-order { order: 1; }
 
-    background-size: auto;
-    background-position: 50% 55px;
+  .advantages__highlight-image-wrapper {
+    position: static;
+
+    margin-bottom: 20px;
   }
 
-  .advantages__sedona-highlight--gift-img {
-    order: 1;
+  .advantages__highlight-image-home { width: 75px; }
 
-    background-size: auto;
-    background-position: 50% 52px;
-  }
+  .advantages__highlight-image-gift { width: 64px; }
 
-  .advantages__sedona-highlight--burger-img {
-
-    background-size: auto;
-    background-position: 50% 57px;
-  }
+  .advantages__highlight-image-food { width: 77px; }
 
   .advantages__sedona-highlight-title {
     margin-bottom: 20px;
@@ -302,6 +307,8 @@
 }
 
 @media (min-width: $desktop-screen-width) {
+  .advantages { background-color: #fff; }
+
   .advantages__title { width: 100%; }
 
   .advantages__image-wrapper img {
