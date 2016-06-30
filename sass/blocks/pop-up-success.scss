@@ -18,7 +18,9 @@
 .pop-up-success__title {
   margin-bottom: 25px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -46,9 +48,12 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @include text-parameters(21px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
+  vertical-align: top;
 
   color: #fff;
   background-color: $blue-background-color;
@@ -83,5 +88,9 @@
     padding-bottom: 44px;
   }
 
-  .pop-up-success__btn { width: 458px;}
+  .pop-up-success__btn {
+    width: 458px;
+
+    font-size: 21px;
+  }
 }

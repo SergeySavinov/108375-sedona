@@ -9,10 +9,12 @@
   margin: 0;
   margin-top: -2px;
   margin-bottom: 27px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -73,6 +75,7 @@
   margin: 0;
   margin-bottom: 9px;
 
+  font-family: "PT Sans Bold";
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -166,7 +169,9 @@
   margin: 0;
   margin-bottom: 14px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 

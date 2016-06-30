@@ -2,7 +2,9 @@
   margin: 0;
   margin-bottom: 27px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -48,7 +50,9 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -110,6 +114,7 @@
   margin-right: 20px;
   padding-left: 18px;
 
+  font-family: "PT Sans Bold";
   font-size: 18px;
   font-weight: bold;
 }
@@ -120,6 +125,7 @@
   height: 48px;
   padding-left: 18px;
 
+  font-family: "PT Sans Bold";
   font-size: 18px;
   font-weight: bold;
 }
@@ -156,7 +162,9 @@
   padding-right: 20px;
   resize: none;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 
   background-color: #f2f2f2;
   border: 4px solid #f2f2f2;
@@ -174,14 +182,18 @@
 }
 
 .feedback-form__impression-block-label,
-.feedback-form__place-block-label,
-{ @include text-parameters(18px, 26px, bold); }
+.feedback-form__place-block-label, {
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
+}
 
 .feedback-form__name-information-input::-webkit-input-placeholder,
 .feedback-form__contact-information-input::-webkit-input-placeholder,
 .feedback-from__customer-opinion-textarea::-webkit-input-placeholder {
-
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 
   opacity: 1;
 }
@@ -189,7 +201,9 @@
 .feedback-form__name-information-input::-moz-placeholder,
 .feedback-form__contact-information-input::-moz-placeholder,
 .feedback-from__customer-opinion-textarea::-moz-placeholder {
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 
   opacity: 1;
 }
@@ -197,7 +211,9 @@
 .feedback-form__name-information-input:-ms-input-placeholder,
 .feedback-form__contact-information-input:-ms-input-placeholder,
 .feedback-from__customer-opinion-textarea:-ms-input-placeholder {
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 
   opacity: 1;
 }
@@ -205,7 +221,9 @@
 .feedback-form__name-information-input:-ms-input-placeholder,
 .feedback-form__contact-information-input:-ms-input-placeholder,
 .feedback-from__customer-opinion-textarea:-ms-input-placeholder {
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 
   opacity: 1;
 }
@@ -213,7 +231,9 @@
 .feedback-form__name-information-input:-moz-placeholder,
 .feedback-form__contact-information-input:-moz-placeholder,
 .feedback-from__customer-opinion-textarea:-moz-placeholder {
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 
   opacity: 1;
 }
@@ -331,7 +351,9 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @include text-parameters(21px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 

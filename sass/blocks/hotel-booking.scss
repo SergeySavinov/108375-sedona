@@ -8,7 +8,9 @@
   margin: 0;
   margin-bottom: 19px;
 
-  @include text-parameters(21px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -31,7 +33,9 @@
   padding-left: 47px;
   padding-right: 47px;
 
-  @include text-parameters(21px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
   vertical-align: top;
@@ -67,11 +71,12 @@
 }
 
 .hotel-booking__map {
-  height: 350px; //временно
+  height: 350px;
 
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #dae4c1;
 }
 
 @media (min-width: $tablet-screen-width) {
