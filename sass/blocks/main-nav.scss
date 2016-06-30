@@ -24,7 +24,9 @@
   padding-top: 7px;
   padding-bottom: 7px;
 
-  @include text-parameters(18px, 40px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;

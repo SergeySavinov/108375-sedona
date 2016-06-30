@@ -2,7 +2,9 @@
   margin: 0;
   margin-bottom: 27px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -41,7 +43,7 @@
 }
 
 .media__photo-title {
-  font-weight: bold;
+  font-family: "PT Sans Bold";
   text-transform: uppercase;
 }
 
@@ -57,6 +59,7 @@
 
   font-size: 0;
   text-decoration: none;
+  vertical-align: top;
 
   color: $gray-text-color;
   background-repeat: no-repeat;
@@ -84,12 +87,16 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #bbb4aa;
 }
 
 .media__video-block-title {
   margin-bottom: 25px;
 
-  @include text-parameters(18px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
+
   text-transform: uppercase;
   text-align: center;
 }
@@ -264,7 +271,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
     padding: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -344,13 +351,13 @@
   .media__subtitles-btn svg,
   .media__full-screan-btn svg { fill: #fff; }
 
-  .media__restart-btn:hover svg,
-  .media__subtitles-btn:hover svg,
-  .media__full-screan-btn:hover svg { fill: #fff; }
-
-  .media__restart-btn:active svg,
-  .media__subtitles-btn:active svg,
-  .media__full-screan-btn:active svg { fill: #fff; }
+//  .media__restart-btn:hover svg,
+//  .media__subtitles-btn:hover svg,
+//  .media__full-screan-btn:hover svg { fill: #fff; }
+//
+//  .media__restart-btn:active svg,
+//  .media__subtitles-btn:active svg,
+//  .media__full-screan-btn:active svg { fill: #fff; }
 }
 
 @media (min-width: $tablet-screen-width) and (min-resolution: $min-resolution-dpi), (min-width: $tablet-screen-width) and (min-resolution: $min-resolution-dppx) {

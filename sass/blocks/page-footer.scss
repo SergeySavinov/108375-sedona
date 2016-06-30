@@ -8,7 +8,9 @@
   display: block;
   margin-bottom: 36px;
 
-  @include text-parameters(21px, 26px, bold);
+  font-family: "PT Sans Bold";
+  font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
